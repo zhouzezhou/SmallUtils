@@ -16,6 +16,9 @@
 		5E6DEA4F1EB5DA73007EBD6A /* SmallUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA4E1EB5DA73007EBD6A /* SmallUtilsTests.m */; };
 		5E6DEA5A1EB5DA73007EBD6A /* SmallUtilsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA591EB5DA73007EBD6A /* SmallUtilsUITests.m */; };
 		5E6DEA6A1EB5DADC007EBD6A /* LocationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA691EB5DADC007EBD6A /* LocationUtils.m */; };
+		5E6DEA8C1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA8B1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.m */; };
+		5E6DEA8F1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA8E1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m */; };
+		5E6DEA9A1EB71EFB007EBD6A /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA991EB71EFB007EBD6A /* IPAddress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		5E6DEA5B1EB5DA73007EBD6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E6DEA681EB5DADC007EBD6A /* LocationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationUtils.h; sourceTree = "<group>"; };
 		5E6DEA691EB5DADC007EBD6A /* LocationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationUtils.m; sourceTree = "<group>"; };
+		5E6DEA8A1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniversallyUniqueIdentifier.h; sourceTree = "<group>"; };
+		5E6DEA8B1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UniversallyUniqueIdentifier.m; sourceTree = "<group>"; };
+		5E6DEA8D1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		5E6DEA8E1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		5E6DEA981EB71EFB007EBD6A /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
+		5E6DEA991EB71EFB007EBD6A /* IPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,8 @@
 		5E6DEA331EB5DA73007EBD6A /* SmallUtils */ = {
 			isa = PBXGroup;
 			children = (
+				5E6DEA971EB71EC4007EBD6A /* IPAddress */,
+				5E6DEA891EB70EA1007EBD6A /* UserIdentifier(用户标识) */,
 				5E6DEA671EB5DA89007EBD6A /* LocationUtils(地理信息) */,
 				5E6DEA371EB5DA73007EBD6A /* AppDelegate.h */,
 				5E6DEA381EB5DA73007EBD6A /* AppDelegate.m */,
@@ -151,6 +162,26 @@
 				5E6DEA691EB5DADC007EBD6A /* LocationUtils.m */,
 			);
 			name = "LocationUtils(地理信息)";
+			sourceTree = "<group>";
+		};
+		5E6DEA891EB70EA1007EBD6A /* UserIdentifier(用户标识) */ = {
+			isa = PBXGroup;
+			children = (
+				5E6DEA8A1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.h */,
+				5E6DEA8B1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.m */,
+				5E6DEA8D1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.h */,
+				5E6DEA8E1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m */,
+			);
+			name = "UserIdentifier(用户标识)";
+			sourceTree = "<group>";
+		};
+		5E6DEA971EB71EC4007EBD6A /* IPAddress */ = {
+			isa = PBXGroup;
+			children = (
+				5E6DEA981EB71EFB007EBD6A /* IPAddress.h */,
+				5E6DEA991EB71EFB007EBD6A /* IPAddress.m */,
+			);
+			name = IPAddress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6DEA8C1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.m in Sources */,
 				5E6DEA6A1EB5DADC007EBD6A /* LocationUtils.m in Sources */,
+				5E6DEA8F1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m in Sources */,
+				5E6DEA9A1EB71EFB007EBD6A /* IPAddress.m in Sources */,
 				5E6DEA3C1EB5DA73007EBD6A /* ViewController.m in Sources */,
 				5E6DEA391EB5DA73007EBD6A /* AppDelegate.m in Sources */,
 				5E6DEA361EB5DA73007EBD6A /* main.m in Sources */,
@@ -530,6 +564,7 @@
 				5E6DEA601EB5DA73007EBD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E6DEA611EB5DA73007EBD6A /* Build configuration list for PBXNativeTarget "SmallUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +573,7 @@
 				5E6DEA631EB5DA73007EBD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E6DEA641EB5DA73007EBD6A /* Build configuration list for PBXNativeTarget "SmallUtilsUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +582,7 @@
 				5E6DEA661EB5DA73007EBD6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

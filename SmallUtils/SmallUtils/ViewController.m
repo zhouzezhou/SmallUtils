@@ -8,11 +8,8 @@
 
 #import "ViewController.h"
 #import "LocationUtils.h"
-
-//#import <UIKit/UIDevice.h>
-//#import "AIFLocationManager.h"
-
-#define IS_IOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8)
+#import "UniversallyUniqueIdentifier.h"
+#import "IPAddress.h"
 
 @interface ViewController ()
 
@@ -34,10 +31,28 @@
     // 3. 在需要使用到经纬度的类里（如此类）加入 #import "LocationUtils.h"，然后使用如下代码获取经纬度信息
     
     LocationUtils *loc = [LocationUtils sharedInstance];
-    NSLog(@"经度:%@", [loc getLatitude]);
-    NSLog(@"纬度:%@", [loc getLongitude]);
+    NSLog(@"经度: %@", [loc getLatitude]);
+    NSLog(@"纬度: %@", [loc getLongitude]);
+}
+- (IBAction)clickGetUUID:(UIButton *)sender {
+    UniversallyUniqueIdentifier *uuid = [UniversallyUniqueIdentifier sharedInstance];
+    NSLog(@"UUID: %@", uuid.uuid);
+    
+    // 其它方法，得到的与上面的不一样，原因未明，以后再来学习 Zzz 2017年 5月 1日 星期一 15时42分15秒 CST
+    CFUUIDRef puuid = CFUUIDCreate( nil );
+    CFStringRef uuidString = CFUUIDCreateString( nil, puuid );
+    NSString * result = (NSString *)CFBridgingRelease(CFStringCreateCopy( NULL, uuidString));
+    CFRelease(puuid);
+    CFRelease(uuidString);
+    NSLog(@"UUID2: %@", result);
 }
 
+- (IBAction)clickGetIpAddressButtion:(UIButton *)sender
+{
+    NSLog(@"Ip: %@", [IPAddress getIPAddress]);
+    
+    NSLog(@"Ip address ipv4:%@",[IPAddress getIPAddress : YES]);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

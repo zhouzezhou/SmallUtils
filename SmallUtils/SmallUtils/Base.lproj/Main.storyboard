@@ -32,12 +32,38 @@
                                     <action selector="clickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q27-cc-wmF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5X-17-W6h">
+                                <rect key="frame" x="35" y="378.5" width="304" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39861747250000001" blue="0.244174477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="获取UUID">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGetUUID:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HXL-PN-4fn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Aj-SK-3gs">
+                                <rect key="frame" x="35" y="438.5" width="304" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.39861747250000001" blue="0.244174477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="获取IP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickGetIpAddressButtion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MWE-2R-DFa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OcU-pf-4jp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0LV-2y-Q1x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i5X-17-W6h" secondAttribute="trailing" constant="20" id="4HW-eg-5lO"/>
                             <constraint firstItem="OcU-pf-4jp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Saq-is-2Sx"/>
+                            <constraint firstItem="i5X-17-W6h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f85-IC-9Pg"/>
+                            <constraint firstItem="9Aj-SK-3gs" firstAttribute="top" secondItem="i5X-17-W6h" secondAttribute="bottom" constant="30" id="g6m-EJ-91q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="OcU-pf-4jp" secondAttribute="trailing" constant="20" id="gqA-vq-8Sg"/>
+                            <constraint firstItem="i5X-17-W6h" firstAttribute="top" secondItem="OcU-pf-4jp" secondAttribute="bottom" constant="30" id="otU-Vn-dZA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Aj-SK-3gs" secondAttribute="trailing" constant="20" id="qDT-b5-D7y"/>
+                            <constraint firstItem="9Aj-SK-3gs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qeF-L8-3Z2"/>
                         </constraints>
                     </view>
                 </viewController>
