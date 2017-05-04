@@ -478,7 +478,7 @@
 				DEVELOPMENT_TEAM = CB29T9LDGP;
 				INFOPLIST_FILE = SmallUtils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhouzezhou.iPhone-1";
+				PRODUCT_BUNDLE_IDENTIFIER = zhouzezhou.SmallUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -490,7 +490,7 @@
 				DEVELOPMENT_TEAM = CB29T9LDGP;
 				INFOPLIST_FILE = SmallUtils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "zhouzezhou.iPhone-1";
+				PRODUCT_BUNDLE_IDENTIFIER = zhouzezhou.SmallUtils;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
