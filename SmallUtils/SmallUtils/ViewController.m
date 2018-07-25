@@ -10,6 +10,7 @@
 #import "LocationUtils.h"
 #import "UniversallyUniqueIdentifier.h"
 #import "IPAddress.h"
+#import "CreateRandomEmjioUtils.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *randomEmoji = [CreateRandomEmjioUtils getRandomUnicodeEmoji];
+    NSLog(@"randomEmoji is :%@", randomEmoji);
 }
 
 // 获取经纬度信息

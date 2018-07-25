@@ -19,6 +19,7 @@
 		5E6DEA8C1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA8B1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.m */; };
 		5E6DEA8F1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA8E1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m */; };
 		5E6DEA9A1EB71EFB007EBD6A /* IPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6DEA991EB71EFB007EBD6A /* IPAddress.m */; };
+		5EC8050B2108C2E0001E2B73 /* CreateRandomEmjioUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC8050A2108C2E0001E2B73 /* CreateRandomEmjioUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		5E6DEA8E1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		5E6DEA981EB71EFB007EBD6A /* IPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAddress.h; sourceTree = "<group>"; };
 		5E6DEA991EB71EFB007EBD6A /* IPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAddress.m; sourceTree = "<group>"; };
+		5EC805092108C2E0001E2B73 /* CreateRandomEmjioUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateRandomEmjioUtils.h; sourceTree = "<group>"; };
+		5EC8050A2108C2E0001E2B73 /* CreateRandomEmjioUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateRandomEmjioUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +116,10 @@
 		5E6DEA331EB5DA73007EBD6A /* SmallUtils */ = {
 			isa = PBXGroup;
 			children = (
-				5E6DEA971EB71EC4007EBD6A /* IPAddress */,
-				5E6DEA891EB70EA1007EBD6A /* UserIdentifier(用户标识) */,
-				5E6DEA671EB5DA89007EBD6A /* LocationUtils(地理信息) */,
+				5EC8050E2108C326001E2B73 /* LocationUtils(地理信息) */,
+				5EC8050D2108C319001E2B73 /* UserIdentifier(用户标识) */,
+				5EC8050C2108C30F001E2B73 /* IPAddress */,
+				5EC805082108C2A0001E2B73 /* EmojiUtils */,
 				5E6DEA371EB5DA73007EBD6A /* AppDelegate.h */,
 				5E6DEA381EB5DA73007EBD6A /* AppDelegate.m */,
 				5E6DEA3A1EB5DA73007EBD6A /* ViewController.h */,
@@ -155,16 +159,25 @@
 			path = SmallUtilsUITests;
 			sourceTree = "<group>";
 		};
-		5E6DEA671EB5DA89007EBD6A /* LocationUtils(地理信息) */ = {
+		5EC805082108C2A0001E2B73 /* EmojiUtils */ = {
 			isa = PBXGroup;
 			children = (
-				5E6DEA681EB5DADC007EBD6A /* LocationUtils.h */,
-				5E6DEA691EB5DADC007EBD6A /* LocationUtils.m */,
+				5EC805092108C2E0001E2B73 /* CreateRandomEmjioUtils.h */,
+				5EC8050A2108C2E0001E2B73 /* CreateRandomEmjioUtils.m */,
 			);
-			name = "LocationUtils(地理信息)";
+			path = EmojiUtils;
 			sourceTree = "<group>";
 		};
-		5E6DEA891EB70EA1007EBD6A /* UserIdentifier(用户标识) */ = {
+		5EC8050C2108C30F001E2B73 /* IPAddress */ = {
+			isa = PBXGroup;
+			children = (
+				5E6DEA981EB71EFB007EBD6A /* IPAddress.h */,
+				5E6DEA991EB71EFB007EBD6A /* IPAddress.m */,
+			);
+			path = IPAddress;
+			sourceTree = "<group>";
+		};
+		5EC8050D2108C319001E2B73 /* UserIdentifier(用户标识) */ = {
 			isa = PBXGroup;
 			children = (
 				5E6DEA8A1EB70F4A007EBD6A /* UniversallyUniqueIdentifier.h */,
@@ -172,16 +185,16 @@
 				5E6DEA8D1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.h */,
 				5E6DEA8E1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m */,
 			);
-			name = "UserIdentifier(用户标识)";
+			path = "UserIdentifier(用户标识)";
 			sourceTree = "<group>";
 		};
-		5E6DEA971EB71EC4007EBD6A /* IPAddress */ = {
+		5EC8050E2108C326001E2B73 /* LocationUtils(地理信息) */ = {
 			isa = PBXGroup;
 			children = (
-				5E6DEA981EB71EFB007EBD6A /* IPAddress.h */,
-				5E6DEA991EB71EFB007EBD6A /* IPAddress.m */,
+				5E6DEA681EB5DADC007EBD6A /* LocationUtils.h */,
+				5E6DEA691EB5DADC007EBD6A /* LocationUtils.m */,
 			);
-			name = IPAddress;
+			path = "LocationUtils(地理信息)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +265,7 @@
 					5E6DEA301EB5DA73007EBD6A = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = CB29T9LDGP;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					5E6DEA491EB5DA73007EBD6A = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -325,6 +338,7 @@
 				5E6DEA8F1EB70FB8007EBD6A /* UIDevice+IdentifierAddition.m in Sources */,
 				5E6DEA9A1EB71EFB007EBD6A /* IPAddress.m in Sources */,
 				5E6DEA3C1EB5DA73007EBD6A /* ViewController.m in Sources */,
+				5EC8050B2108C2E0001E2B73 /* CreateRandomEmjioUtils.m in Sources */,
 				5E6DEA391EB5DA73007EBD6A /* AppDelegate.m in Sources */,
 				5E6DEA361EB5DA73007EBD6A /* main.m in Sources */,
 			);
@@ -475,11 +489,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zezhou Zhou (5Z28S55889)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CB29T9LDGP;
 				INFOPLIST_FILE = SmallUtils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhouzezhou.SmallUtils;
+				PRODUCT_BUNDLE_IDENTIFIER = zzz.dev.demo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "af09421c-7f26-4725-9ae7-f773245ebc28";
+				PROVISIONING_PROFILE_SPECIFIER = "Zzz DEMO Project 2 Dev";
 			};
 			name = Debug;
 		};
@@ -487,11 +505,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zezhou Zhou (5Z28S55889)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = CB29T9LDGP;
 				INFOPLIST_FILE = SmallUtils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zhouzezhou.SmallUtils;
+				PRODUCT_BUNDLE_IDENTIFIER = zzz.dev.demo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "af09421c-7f26-4725-9ae7-f773245ebc28";
+				PROVISIONING_PROFILE_SPECIFIER = "Zzz DEMO Project 2 Dev";
 			};
 			name = Release;
 		};
